@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "avalanche_api"
+version = "1.0.0"
+description = "Get data about avalanche blockchain"
+authors = ["Alexey Kryuchkov <alexkryu4kov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.9.5"
+
+fastapi = "0.72.0"
+pydantic = "1.9.0"
+uvicorn  = "0.16.0"
+
+web3 = "5.31.3"
+
+pytest = "5.4.3"
+pytest-aiohttp = "0.3.0"
