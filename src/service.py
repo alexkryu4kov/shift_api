@@ -1,6 +1,6 @@
 import logging
 
-from aiohttp import ClientSession, TCPConnector
+from aiohttp import ClientSession
 from fastapi import FastAPI
 import uvicorn
 
@@ -15,7 +15,7 @@ app = FastAPI()
 
 ankr_client = AnkrClient(blockchain_type='avalanche')
 
-session = ClientSession(connector=TCPConnector(verify_ssl=False))
+session = ClientSession()
 snowtrace_client = SnowtraceClient(session)
 
 
